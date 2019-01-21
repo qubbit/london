@@ -65,7 +65,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 13vw 0;
+    padding: 4vw 0;
     max-width: 70%;
     margin: auto;
     text-align: center;
@@ -391,6 +391,7 @@ body {
 
 .post-feed {
     display: flex;
+    flex-direction: column;
     align-items: ;
     flex-wrap: wrap;
 }
@@ -401,10 +402,11 @@ body {
     display: flex;
     position: relative;
     height: 35vw;
-    background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
+    /*background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;*/
     background-size: cover;
     overflow: hidden;
     counter-increment: posts;
+    height: 100px;
 }
 
 @media (max-width: 700px) {
@@ -433,8 +435,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #fff;
-    background: rgba(0,0,0,0.1);
+    color: #374d58;
+    /*background: rgba(0,0,0,0.1);*/
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
 }
@@ -469,7 +471,7 @@ body {
     position: absolute;
     bottom: -0.15em;
     right: 5vw;
-    font-size: 28vw;
+    font-size: 4vw;
     line-height: 1em;
     font-weight: var(--font-heavy);
     letter-spacing: -0.1em;
@@ -479,11 +481,11 @@ body {
 .post-card.no-image .post-card-content {
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 4vw;
+    padding: 20px;
 }
 
 .post-card.no-image .post-card-title {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.15em;
     text-align: left;
 }
