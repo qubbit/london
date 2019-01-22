@@ -363,7 +363,8 @@ h1 {
     font-size: 5.7rem;
     font-weight: 800;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 800px) {
     h1 {
         font-size: 2.7rem;
     }
@@ -404,3 +405,8 @@ h6 {
     font-size: 2.2rem;
 }
 
+.center-thing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

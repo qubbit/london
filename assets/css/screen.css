@@ -480,9 +480,25 @@ body {
 */
 
 .post-card.no-image .post-card-content {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+body.home-template #swup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#swup > div {
+    width: 960px;
+}
+
+@media (min-width: 500px) {
+    #swup > div {
+        width: 100%;
+    }
 }
 
 .post-card.no-image .post-card-title {
