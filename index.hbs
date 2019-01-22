@@ -3,9 +3,12 @@
 into the {body} of the default.hbs template --}}
 
 {{#is "home"}}
+    {{#if @site.title}}
+        <h2 class="page-head-title">{{@site.title}}</h2>
+    {{/if}}
     {{#if @site.description}}
     <header class="page-head">
-        <h2 class="page-head-title">{{@site.description}}</h2>
+        <p class="blog-description">{{@site.description}}</h2>
     </header>
     {{/if}}
 {{/is}}

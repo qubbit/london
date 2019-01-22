@@ -54,15 +54,6 @@ body {
     padding: 3vw;
     min-height: 100vh;
 }
-@media (max-width: 850px) {
-    .site-wrapper {
-        padding: 6vw;
-    }
-
-    .page-head-title {
-        font-size: 2rem;
-    }
-}
 
 .page-head {
     display: flex;
@@ -106,15 +97,44 @@ body {
     color: var(--color-base);
 }
 
+.post-card-title {
+    font-size: 2rem;
+}
+
 .page-head-description {
     margin: 0 0 1.6vw;
     color: color(var(--color-border) l(-20%));
     font-size: 2.2rem;
     line-height: 1.35em;
 }
+
+@media (max-width: 960px) {
+    h2.post-card-title {
+        font-size: 2rem;
+    }
+
+    h2.page-head-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .site-wrapper {
+        padding: 6vw;
+    }
+}
+
 @media (max-width: 500px) {
     .page-head-description {
         font-size: 1.6rem;
+    }
+
+    h2.page-head-title {
+        font-size: 1.8rem;
+    }
+
+    h2.post-card-title {
+        font-size: 1.4rem;
     }
 }
 
@@ -462,6 +482,16 @@ body {
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
 }
 
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .post-date {
+        text-align: right;
+        font-size: 1.1rem;
+    }
+}
+
 /* Posts without images */
 /*
 .post-card.no-image:before {
@@ -490,14 +520,14 @@ body.home-template #swup {
   align-items: center;
 }
 
-@media (min-width: 320px) {
+#swup > div {
+    width: 960px;
+}
+
+@media (max-width: 960px) {
     #swup > div {
         width: 100%;
     }
-}
-
-#swup > div {
-    width: 960px;
 }
 
 @media (max-width: 320px) {
@@ -519,7 +549,7 @@ body.home-template #swup {
 
 @media (min-width: 1200px) {
     .post-card.no-image .post-card-title {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -551,7 +581,8 @@ body.home-template #swup {
 .post-content-title {
     margin: 0 0 3vw;
     color: var(--color-base);
-    text-align: center;
+    width: 100%;
+    text-align: left;
 }
 
 .post-content-excerpt {
@@ -643,7 +674,7 @@ body.home-template #swup {
 .post-content-body pre {
     overflow-x: auto;
     margin: 1.5em 0 3em;
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
     border: color(var(--color-base) l(-10%)) 1px solid;
     color: var(--color-bg);

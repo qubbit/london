@@ -171,7 +171,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: 'SF Mono', monospace, monospace;
     font-size: 1em;
 }
 button,
@@ -363,12 +363,6 @@ h1 {
     font-weight: 800;
 }
 
-@media (max-width: 800px) {
-    h1 {
-        font-size: 2.7rem;
-    }
-}
-
 @media (max-width: 500px) {
     h1 {
         font-size: 2.0rem;
@@ -376,13 +370,7 @@ h1 {
 }
 
 h2 {
-    margin: 1.5em 0 0.5em 0;
-    font-size: 4rem;
-}
-@media (max-width: 500px) {
-    h2 {
-        font-size: 2rem;
-    }
+    font-size: 3rem;
 }
 
 h3 {
